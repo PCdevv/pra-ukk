@@ -1,0 +1,17 @@
+C:\Users\lab rpl 1\Source\Repos\KonversiNilai-24-XIIPPLG1\KonversiNilai-24-XIIPPLG1\bin\Debug\net6.0-windows\KonversiNilai-24-XIIPPLG1.exe
+C:\Users\lab rpl 1\Source\Repos\KonversiNilai-24-XIIPPLG1\KonversiNilai-24-XIIPPLG1\bin\Debug\net6.0-windows\KonversiNilai-24-XIIPPLG1.deps.json
+C:\Users\lab rpl 1\Source\Repos\KonversiNilai-24-XIIPPLG1\KonversiNilai-24-XIIPPLG1\bin\Debug\net6.0-windows\KonversiNilai-24-XIIPPLG1.runtimeconfig.json
+C:\Users\lab rpl 1\Source\Repos\KonversiNilai-24-XIIPPLG1\KonversiNilai-24-XIIPPLG1\bin\Debug\net6.0-windows\KonversiNilai-24-XIIPPLG1.dll
+C:\Users\lab rpl 1\Source\Repos\KonversiNilai-24-XIIPPLG1\KonversiNilai-24-XIIPPLG1\bin\Debug\net6.0-windows\KonversiNilai-24-XIIPPLG1.pdb
+C:\Users\lab rpl 1\Source\Repos\KonversiNilai-24-XIIPPLG1\KonversiNilai-24-XIIPPLG1\obj\Debug\net6.0-windows\KonversiNilai-24-XIIPPLG1.csproj.AssemblyReference.cache
+C:\Users\lab rpl 1\Source\Repos\KonversiNilai-24-XIIPPLG1\KonversiNilai-24-XIIPPLG1\obj\Debug\net6.0-windows\KonversiNilai_24_XIIPPLG1.Form1.resources
+C:\Users\lab rpl 1\Source\Repos\KonversiNilai-24-XIIPPLG1\KonversiNilai-24-XIIPPLG1\obj\Debug\net6.0-windows\KonversiNilai-24-XIIPPLG1.csproj.GenerateResource.cache
+C:\Users\lab rpl 1\Source\Repos\KonversiNilai-24-XIIPPLG1\KonversiNilai-24-XIIPPLG1\obj\Debug\net6.0-windows\KonversiNilai-24-XIIPPLG1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lab rpl 1\Source\Repos\KonversiNilai-24-XIIPPLG1\KonversiNilai-24-XIIPPLG1\obj\Debug\net6.0-windows\KonversiNilai-24-XIIPPLG1.AssemblyInfoInputs.cache
+C:\Users\lab rpl 1\Source\Repos\KonversiNilai-24-XIIPPLG1\KonversiNilai-24-XIIPPLG1\obj\Debug\net6.0-windows\KonversiNilai-24-XIIPPLG1.AssemblyInfo.cs
+C:\Users\lab rpl 1\Source\Repos\KonversiNilai-24-XIIPPLG1\KonversiNilai-24-XIIPPLG1\obj\Debug\net6.0-windows\KonversiNilai-24-XIIPPLG1.csproj.CoreCompileInputs.cache
+C:\Users\lab rpl 1\Source\Repos\KonversiNilai-24-XIIPPLG1\KonversiNilai-24-XIIPPLG1\obj\Debug\net6.0-windows\KonversiNilai-24-XIIPPLG1.dll
+C:\Users\lab rpl 1\Source\Repos\KonversiNilai-24-XIIPPLG1\KonversiNilai-24-XIIPPLG1\obj\Debug\net6.0-windows\refint\KonversiNilai-24-XIIPPLG1.dll
+C:\Users\lab rpl 1\Source\Repos\KonversiNilai-24-XIIPPLG1\KonversiNilai-24-XIIPPLG1\obj\Debug\net6.0-windows\KonversiNilai-24-XIIPPLG1.pdb
+C:\Users\lab rpl 1\Source\Repos\KonversiNilai-24-XIIPPLG1\KonversiNilai-24-XIIPPLG1\obj\Debug\net6.0-windows\KonversiNilai-24-XIIPPLG1.genruntimeconfig.cache
+C:\Users\lab rpl 1\Source\Repos\KonversiNilai-24-XIIPPLG1\KonversiNilai-24-XIIPPLG1\obj\Debug\net6.0-windows\ref\KonversiNilai-24-XIIPPLG1.dll
