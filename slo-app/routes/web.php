@@ -36,7 +36,7 @@ Route::middleware('auth', 'masyarakat')->group(function () {
 
 Route::middleware('auth', 'petugas')->group(function () {
     Route::prefix('data')->group(function () {
-        Route::resource('lelang', LelangController::class);
+        Route::resource('lelang', LelangController::class)->only('index', 'show');
         Route::patch('/lelang/buka/{lelang}', [LelangController::class, 'buka'])->name('lelang.buka');
         Route::patch('/lelang/tutup/{lelang}', [LelangController::class, 'tutup'])->name('lelang.tutup');
     });
@@ -45,8 +45,8 @@ Route::middleware('auth', 'petugas')->group(function () {
 Route::middleware('auth', 'admin-petugas')->group(function () {
     Route::prefix('data')->group(function () {
         Route::resource('barang', BarangController::class);
-        Route::get('/laporan-lelang', [LelangController::class, 'laporan_lelang'])->name('laporan.lelang');
-        Route::get('/laporan-penawaran', [LelangController::class, 'laporan_penawaran'])->name('laporan.penawaran');
+        Route::get('/laporan-lelang', [LaporanController::class, 'laporan_lelang'])->name('laporan.lelang');
+        Route::get('/laporan-penawaran', [LaporanController::class, 'laporan_penawaran'])->name('laporan.penawaran');
         Route::get('/laporan-export-excel', [LaporanController::class, 'exportExcelLelang'])->name('lelang-export-excel');
         Route::get('/penawaran-export-excel', [LaporanController::class, 'exportExcelPenawaran'])->name('penawaran-export-excel');
     });
@@ -69,4 +69,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

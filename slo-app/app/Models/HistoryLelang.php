@@ -18,10 +18,10 @@ class HistoryLelang extends Model
     }
     public function data_barang()
     {
-        return $this->hasOne(Barang::class, 'id_barang');
+        return $this->belongsTo(Barang::class, 'id_barang');
     }
     public function data_lelang()
     {
-        return $this->hasOne(Lelang::class, 'id_lelang');
+        return $this->belongsTo(Lelang::class, 'id_lelang');
     }
 }

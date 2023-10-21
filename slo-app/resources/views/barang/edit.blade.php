@@ -7,9 +7,9 @@
 
     <div class="py-12">
         <div class="w-3/5 mx-auto sm:px-6 lg:px-8">
-            <div class="grid divide-y bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="grid divide-y bg-white  overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="flex justify-between p-6">
-                    <div class="text-gray-900 dark:text-gray-100">
+                    <div class="text-gray-900 ">
                         {{ __("Edit Barang") }}
                     </div>
                     <x-secondary-button>
@@ -33,7 +33,7 @@
                         <!-- Deskripsi -->
                         <div class="mt-4">
                             <x-input-label for="deskripsi_barang" :value="__('Deskripsi Barang')" />
-                            <textarea id="deskripsi_barang" class="block mt-1 w-full border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm" type="text" name="deskripsi_barang" :value="old('deskripsi_barang')" required autofocus autocomplete="deskripsi_barang" cols="30" rows="10">{{  $barang->deskripsi_barang }}</textarea>
+                            <textarea id="deskripsi_barang" class="block mt-1 w-full border-gray-300    focus:border-indigo-500 :border-indigo-600 focus:ring-indigo-500 :ring-indigo-600 rounded-md shadow-sm" type="text" name="deskripsi_barang" :value="old('deskripsi_barang')" required autofocus autocomplete="deskripsi_barang" cols="30" rows="10">{{  $barang->deskripsi_barang }}</textarea>
                             <x-input-error :messages="$errors->get('deskripsi_barang')" class="mt-2" />
                         </div>
                 
@@ -47,7 +47,7 @@
                         <!-- Foto -->
                         <div class="mt-4">
                             <x-input-label for="foto" :value="__('Foto Barang')" />
-                            <input id="foto" class="block mt-1 w-full border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm" type="file" accept="image/**" name="foto_barang" autocomplete="username" />
+                            <input id="foto" class="block mt-1 w-full border-gray-300    focus:border-indigo-500 :border-indigo-600 focus:ring-indigo-500 :ring-indigo-600 rounded-md shadow-sm" type="file" accept="image/**" name="foto_barang" autocomplete="username" />
                             <div class="flex justify-start items-center p-6">
                                 <img src="{{ asset($barang->foto_barang) }}" alt="foto_barang" class="w-48 h-auto">
                             </div>

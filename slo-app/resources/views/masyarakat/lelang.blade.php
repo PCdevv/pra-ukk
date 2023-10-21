@@ -7,45 +7,45 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="my-4 grid divide-y bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="my-4 grid divide-y bg-white  overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="flex justify-between p-6">
-                    <div class="text-gray-900 dark:text-gray-100">
+                    <div class="text-gray-900 ">
                         {{ __("Detail") }}
                     </div>
                 </div>
                 <div class="flex justify-start items-center p-6">
                     <img src="{{ asset($barang->foto_barang) }}" alt="foto_barang" class="w-56 h-auto">
                     <div class="flex flex-col justify-between h-full px-16">
-                        <div class="text-gray-900 dark:text-gray-100">
+                        <div class="text-gray-900 ">
                             {{ __("Nama Barang : ") }}
                             {{ $barang->nama_barang }}
                         </div>
-                        <div class="text-gray-900 dark:text-gray-100">
+                        <div class="text-gray-900 ">
                             {{ __("Tanggal : ") }}
-                            {{ $barang->tgl }}
+                            {{ date('d/m/Y', strtotime($barang->tgl)) }}
                         </div>
-                        <div class="text-gray-900 dark:text-gray-100">
+                        <div class="text-gray-900 ">
                             {{ __("Harga Awal : ") }}
                             {{ $barang->harga_awal }}
                         </div>
-                        <div class="text-gray-900 dark:text-gray-100">
+                        <div class="text-gray-900 ">
                             {{ __("Deskripsi : ") }}
                             {{ $barang->deskripsi_barang }}
                         </div>
-                        <div class="text-gray-900 dark:text-gray-100">
+                        <div class="text-gray-900 ">
                             {{ __("Status : ") }}
                             {{ $lelang->status }}
                         </div>
-                        <div class="text-gray-900 dark:text-gray-100">
+                        <div class="text-gray-900 ">
                             {{ __("Pemenang : ") }}
                             {{ $lelang->status == 'ditutup' && !is_null($pemenang) ? $pemenang->name : "Belum ada" }}
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="my-4 grid divide-y bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="my-4 grid divide-y bg-white  overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="flex justify-between p-6">
-                    <div class="text-gray-900 dark:text-gray-100">
+                    <div class="text-gray-900 ">
                         {{ __("Penawaran ") }}
                         {{ $barang->nama_barang }}
                     </div>
@@ -61,7 +61,7 @@
                         </x-primary-button>
                     </form>
                 @else
-                <div class="flex flex-col justify-center items-start p-6 gap-4 text-gray-900 dark:text-gray-100">
+                <div class="flex flex-col justify-center items-start p-6 gap-4 text-gray-900 ">
                     {{ __("Anda telah menawar ") }}
                     {{ $barang->nama_barang}}
                     {{ __("dengan harga ") }}
@@ -74,9 +74,9 @@
                 </div>
                 @endif
             </div>
-            <div class="my-4 grid divide-y bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="my-4 grid divide-y bg-white  overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="flex justify-between p-6">
-                    <div class="text-gray-900 dark:text-gray-100">
+                    <div class="text-gray-900 ">
                         {{ __("Data-data Pelelang") }}
                         {{ $barang->nama_barang }}
                     </div>
@@ -85,7 +85,7 @@
                     <table id="table" class="w-full table table-lg table-auto rounded-lg">
                         <thead>
                             <tr">
-                                <th>No. </th>
+                                <th>#</th>
                                 <th>Penawar</th>
                                 <th>No Telp</th>
                                 <th>Harga Penawaran</th>

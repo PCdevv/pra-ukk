@@ -41,7 +41,7 @@
                                 <td>{{ $b->nama_barang }}</td>
                                 <td>{{ $b->harga_awal }}</td>
                                 <td><img src="{{asset($b->foto_barang)}}" alt="foto_barang" class="w-48 h-auto"></td>
-                                <td>{{ Str::substr($b->tgl, 0, -6)}}</td>
+                                <td>{{ date('d/m/Y', strtotime($b->tgl)) }}</td>
                                 <td>
                                     <form action="{{ route('barang.edit', ['barang' => $b->id_barang]) }}" method="get">
                                         <button class="rounded-md bg-yellow-400 my-1 p-2 hover:bg-yellow-800">

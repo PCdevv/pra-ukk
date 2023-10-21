@@ -39,8 +39,8 @@
                 @endif
                 @if (Auth::user()->level == 'admin')
                 <div class="space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('user.index', ['level' => 'admin'])" :active="request()->is('data/user/admin*')" class="text-white">
-                        {{ __('Data Admin') }}
+                    <x-nav-link :href="route('user.index', ['level' => 'masyarakat'])" :active="request()->is('data/user/masyarakat*')" class="text-white">
+                        {{ __('Data Masyarakat') }}
                     </x-nav-link>
                 </div>
                 <div class="space-x-8 sm:-my-px sm:ml-10 sm:flex">
@@ -49,8 +49,8 @@
                     </x-nav-link>
                 </div>
                 <div class="space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('user.index', ['level' => 'masyarakat'])" :active="request()->is('data/user/masyarakat*')" class="text-white">
-                        {{ __('Data Masyarakat') }}
+                    <x-nav-link :href="route('user.index', ['level' => 'admin'])" :active="request()->is('data/user/admin*')" class="text-white">
+                        {{ __('Data Admin') }}
                     </x-nav-link>
                 </div>
                 @endif

@@ -69,10 +69,10 @@
                     <table class="table" id="table">
                         <thead>
                             <tr>
-                                <th>No. </thclass=>
+                                <th>#</thclass=>
                                 <th>Nama Barang</th>
                                 <th>Penawar</th>
-                                <th>No. Telp</th>
+                                <th>#Telp</th>
                                 <th>Harga Penawaran</th>
                             </tr>
                         </thead>

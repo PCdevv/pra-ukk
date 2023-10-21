@@ -7,9 +7,9 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 grid divide-y overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="bg-white  grid divide-y overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="flex justify-between p-6">
-                    <div class="text-gray-900 dark:text-gray-100">
+                    <div class="text-gray-900 ">
                         {{ __("Laporan Lelang") }}
                     </div>
                     <x-secondary-button href>
@@ -41,7 +41,7 @@
                                 <td> {{ $l->harga_akhir }}</td>
                                 <td>{{$l->data_masyarakat->name}}</td>
                                 <td>{{$l->data_petugas->name}}</td>
-                                <td>{{ $l->tgl_lelang }}</td>
+                                <td>{{ date('d/m/Y', strtotime($l->tgl_lelang)) }}</td>
                                 <td>
                                     {{ $l->status == '0' ? "tunda" : $l->status }}
                                 </td>

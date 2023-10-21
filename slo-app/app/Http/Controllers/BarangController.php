@@ -65,7 +65,7 @@ class BarangController extends Controller
      */
     public function show(Barang $barang, Request $request)
     {
-        $histories = HistoryLelang::where('id_barang', $barang->id_barang)->get();
+        $histories = HistoryLelang::where('id_barang', $barang->id_barang)->orderBy('penawaran_harga', 'desc')->get();
         $history = $histories->where('id_masyarakat', $request->user()->id)->first();
         $lelang = Lelang::where('id_barang', $barang->id_barang)->first();
         $pemenang = User::where('id', $lelang->id_masyarakat)->select('id', 'name')->first();
@@ -101,10 +101,10 @@ class BarangController extends Controller
             $request['foto_barang'] = $barang->foto_barang;
         }
         $barang->update([
-            'nama_barang'=> $request->nama_barang,
-            'deskripsi_barang'=> $request->deskripsi_barang,
-            'harga_awal'=> $request->harga_awal,
-            'foto_barang'=> $request->foto_barang,
+            'nama_barang' => $request->nama_barang,
+            'deskripsi_barang' => $request->deskripsi_barang,
+            'harga_awal' => $request->harga_awal,
+            'foto_barang' => $request->foto_barang,
         ]);
         return redirect('/data/barang');
     }

@@ -7,9 +7,9 @@
 
     <div class="py-12">
         <div class="w-3/5 mx-auto sm:px-6 lg:px-8">
-            <div class="grid divide-y bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="grid divide-y bg-white  overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="flex justify-between p-6">
-                    <div class="text-gray-900 dark:text-gray-100">
+                    <div class="text-gray-900 ">
                         {{ __("Tambah Barang") }}
                     </div>
                     <x-secondary-button>
@@ -32,7 +32,7 @@
                         <!-- Deskripsi -->
                         <div class="mt-4">
                             <x-input-label for="deskripsi_barang" :value="__('Deskripsi Barang')" />
-                            <textarea id="deskripsi_barang" class="block mt-1 w-full border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm" type="text" name="deskripsi_barang" :value="old('deskripsi_barang')" required autofocus autocomplete="deskripsi_barang" cols="30" rows="10"></textarea>
+                            <textarea id="deskripsi_barang" class="block mt-1 w-full border-gray-300    focus:border-indigo-500 :border-indigo-600 focus:ring-indigo-500 :ring-indigo-600 rounded-md shadow-sm" type="text" name="deskripsi_barang" :value="old('deskripsi_barang')" required autofocus autocomplete="deskripsi_barang" cols="30" rows="10"></textarea>
                             <x-input-error :messages="$errors->get('deskripsi_barang')" class="mt-2" />
                         </div>
                 
@@ -47,7 +47,7 @@
                         <div class="mt-4">
                             <x-input-label for="foto_barang" :value="__('Foto Barang')" />
                             <input id="foto_barang" name="foto_barang"
-                            class="block mt-1 w-full border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm" type="file" accept="image/*" name="foto_barang" :value="old('foto_barang')" required autocomplete="foto" />
+                            class="block mt-1 w-full border-gray-300    focus:border-indigo-500 :border-indigo-600 focus:ring-indigo-500 :ring-indigo-600 rounded-md shadow-sm" type="file" accept="image/*" name="foto_barang" :value="old('foto_barang')" required autocomplete="foto" />
                             <x-input-error :messages="$errors->get('foto_barang')" class="mt-2" />
                         </div>
                         <div class="flex items-center justify-end mt-4">
